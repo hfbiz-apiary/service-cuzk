@@ -5,12 +5,27 @@ FORMAT: 1A
 Is service for providing CUZK functions easily available by REST interface.
 
 
-# Reports
+# Group Account
+
+Manage the account.
+
+
+## renewalPassword [/renewalPassword]
+
+Renew the password when comes out of date.
+
+### ­ [GET]
+
++ Response 200
+
+
+
+# Group Reports
+
+Operations with reports.
 
 
 ## generujLV [/generujLV?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -26,14 +41,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
 
 + Response 200 (application/json)
 
 
 ## generujLVPresObjekty [/generujLVPresObjekty?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -53,14 +68,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
 
 + Response 200 (application/json)
 
 
 ## generujLVZjednodusene [/generujLVZjednodusene?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -78,14 +93,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
 
 + Response 200 (application/json)
 
 
 ## generujMapu [/generujMapu?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -113,14 +128,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
 
 + Response 200 (application/json)
 
 
 ## generujPrehledVlastnictvi [/generujPrehledVlastnictvi?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -142,16 +157,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
         
 + Response 200 (application/json)
 
 
 ## seznamSestav [/seznamSestav?params={params}]
-
-Parameters with value `null` are not required.
-
-If `idSestavy` is set to `null`, return result will be all the list.
 
 + Parameters 
 
@@ -162,6 +175,10 @@ If `idSestavy` is set to `null`, return result will be all the list.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
+If `idSestavy` is set to `null`, return result will be all the list.
+
 + Request (application/json)
 
 + Response 200 (application/json)
@@ -169,9 +186,6 @@ If `idSestavy` is set to `null`, return result will be all the list.
 
 ## smazSestavu [/smazSestavu?params={params}]
     
-
-Parameters with value `null` are not required.
-
 + Parameters 
 
     + params (object) - valid JSON object of params
@@ -181,14 +195,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
         
 + Response 200 (application/json)
 
 
 ## vratGenerovanyLV [/vratGenerovanyLV?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -204,14 +218,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
 
 + Response 200 (application/pdf)
 
 
 ## vratGenerovanyLVPresObjekty [/vratGenerovanyLVPresObjekty?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -231,14 +245,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
 
 + Response 200 (application/pdf)
 
 
 ## vratGenerovanyLVZjednodusene [/vratGenerovanyLVZjednodusene?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -256,14 +270,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
 
 + Response 200 (application/pdf)
 
 
 ## vratGenerovanouMapu [/vratGenerovanouMapu?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -291,14 +305,14 @@ Parameters with value `null` are not required.
 
 ### ­ [GET]
 
+Parameters with value `null` are not required.
+
 + Request (application/json)
 
 + Response 200 (application/pdf)
 
 
 ## vratGenerovanyPrehledVlastnictvi [/vratGenerovanyPrehledVlastnictvi?params={params}]
-
-Parameters with value `null` are not required.
 
 + Parameters 
 
@@ -319,6 +333,8 @@ Parameters with value `null` are not required.
         `"ucelKod": null`
 
 ### ­ [GET]
+
+Parameters with value `null` are not required.
 
 + Request (application/json)
         
@@ -339,3 +355,70 @@ Parameters with value `null` are not required.
 + Request (application/json)
         
 + Response 200 (application/pdf)
+
+
+
+# Group Searching
+
+
+## najdiOS [/najdiOS?params={params}]
+
++ Parameters
+
+    + params (object) - valid JSON object of params
+
+        `"nazev": null`
+        
+        `"ico": null`
+        
+        `"rc": null`
+        
+### ­ [GET]
+
+Parameters with value `null` are not required.
+
++ Request (application/json)
+        
++ Response 200 (application/json)
+
+
+## najdiParcelu [/najdiParcelu?params={params}]
+
++ Parameters
+
+    + params (object) - valid JSON object of params
+
+        `"katastrUzemiKod": 0`
+        
+        `"kmenoveCislo": 0`
+        
+        `"poddeleni": null`
+        
+### ­ [GET]
+
+Parameters with value `null` are not required.
+
++ Request (application/json)
+        
++ Response 200 (application/json)
+
+
+## najdiStavbu [/najdiStavbu?params={params}]
+
++ Parameters
+
+    + params (object) - valid JSON object of params
+
+        `"castObceKod": 0`
+        
+        `"typStavbyKod": 0`
+        
+        `"cisloDomovni": 0`
+        
+### ­ [GET]
+
++ Request (application/json)
+        
++ Response 200 (application/json)
+
+
