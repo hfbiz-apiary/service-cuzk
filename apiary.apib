@@ -30,15 +30,20 @@ Operations with reports.
 + Parameters 
 
     + params (object) - valid JSON object of params
-
-        `"lvId": 0`
+    
+        `{`
+    
+        `"lvId": 0,`
         
-        `"format": "pdf"`
+        `"format": "pdf",`
         
-        `"cisloJednaci": null`
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
-
+        
+        `}`
+        
+        
 ### ­ [GET]
 
 Parameters with value `null` are not required.
@@ -54,17 +59,21 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"seznamuObjektuTyp": ""`
-
-        `"seznamObjektu": ""`
-
-        `"castecnyVypis": "n"`
-
-        `"format": "pdf"`
+        `{`
         
-        `"cisloJednaci": null`
+        `"seznamuObjektuTyp": "",`
+        
+        `"seznamObjektu": "",`
+        
+        `"castecnyVypis": "n",`
+        
+        `"format": "pdf",`
+        
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
+        
+        `}`
 
 ### ­ [GET]
 
@@ -81,15 +90,20 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"katastrUzemiKod": 0`
-
-        `"lvCislo": 0`
-
-        `"format": "pdf"`
+        `{`
         
-        `"cisloJednaci": null`
+        `"katastrUzemiKod": 0,`
+        
+        `"lvCislo": 0,`
+        
+        `"format": "pdf",`
+        
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
+        
+        `}`       
+        
 
 ### ­ [GET]
 
@@ -106,25 +120,29 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"parcelaId": null`
-
-        `"souradniceX": null`
-
-        `"souradniceY": null`
-
-        `"formatPapiru": "A4"`
-
-        `"orientaceNaSirku": "n"`
-
-        `"meritkoMapy": 1000`
-
-        `"vecnaBremena": "n"`
-
-        `"format": "pdf"`
+        `{`
         
-        `"cisloJednaci": null`
+        `"parcelaId": null,`
+    
+        `"souradniceX": null,`
+    
+        `"souradniceY": null,`
+    
+        `"formatPapiru": "A4",`
+    
+        `"orientaceNaSirku": "n",`
+    
+        `"meritkoMapy": 1000,`
+    
+        `"vecnaBremena": "n",`
+    
+        `"format": "pdf",`
+        
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
+        
+        `}`
 
 ### ­ [GET]
 
@@ -141,19 +159,23 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"osId": 0`
+        `{`
         
-        `"krajKod": null`
+        `"osId": 0,`
         
-        `"obecKod": null`
+        `"krajKod": null,`
         
-        `"typPravnihoVztahu": null`
+        `"obecKod": null,`
+        
+        `"typPravnihoVztahu": null,`
 
-        `"format": "pdf"`
+        `"format": "pdf",`
         
-        `"cisloJednaci": null`
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
+        
+        `}`
 
 ### ­ [GET]
 
@@ -169,8 +191,12 @@ Parameters with value `null` are not required.
 + Parameters 
 
     + params (object) - valid JSON object of params
-
+    
+        `{`
+        
         `"idSestavy": null`
+        
+        `}`
 
 
 ### ­ [GET]
@@ -190,7 +216,11 @@ If `idSestavy` is set to `null`, return result will be all the list.
 
     + params (object) - valid JSON object of params
 
+        `{`
+        
         `"idSestavy": 0`
+        
+        `}`
 
 
 ### ­ [GET]
@@ -207,14 +237,18 @@ Parameters with value `null` are not required.
 + Parameters 
 
     + params (object) - valid JSON object of params
+    
+        `{`
 
-        `"lvId": 0`
+        `"lvId": 0,`
         
-        `"format": "pdf"`
+        `"format": "pdf",`
         
-        `"cisloJednaci": null`
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
+        
+        `}`
 
 ### ­ [GET]
 
@@ -231,17 +265,21 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"seznamuObjektuTyp": ""`
+        `{`
 
-        `"seznamObjektu": ""`
+        `"seznamuObjektuTyp": "",`
 
-        `"castecnyVypis": "n"`
+        `"seznamObjektu": "",`
 
-        `"format": "pdf"`
+        `"castecnyVypis": "n",`
+
+        `"format": "pdf",`
         
-        `"cisloJednaci": null`
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
+        
+        `}`
 
 ### ­ [GET]
 
@@ -258,15 +296,19 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"katastrUzemiKod": 0`
+        `{`
 
-        `"lvCislo": 0`
+        `"katastrUzemiKod": 0,`
 
-        `"format": "pdf"`
+        `"lvCislo": 0,`
+
+        `"format": "pdf",`
         
-        `"cisloJednaci": null`
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
+        
+        `}`
 
 ### ­ [GET]
 
@@ -283,25 +325,29 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"parcelaId": null`
+        `{`
 
-        `"souradniceX": null`
+        `"parcelaId": null,`
 
-        `"souradniceY": null`
+        `"souradniceX": null,`
 
-        `"formatPapiru": "A4"`
+        `"souradniceY": null,`
 
-        `"orientaceNaSirku": "n"`
+        `"formatPapiru": "A4",`
 
-        `"meritkoMapy": 1000`
+        `"orientaceNaSirku": "n",`
 
-        `"vecnaBremena": "n"`
+        `"meritkoMapy": 1000,`
 
-        `"format": "pdf"`
+        `"vecnaBremena": "n",`
+
+        `"format": "pdf",`
         
-        `"cisloJednaci": null`
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
+        
+        `}`
 
 ### ­ [GET]
 
@@ -318,19 +364,23 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"osId": 0`
-        
-        `"krajKod": null`
-        
-        `"obecKod": null`
-        
-        `"typPravnihoVztahu": null`
+        `{`
 
-        `"format": "pdf"`
+        `"osId": 0,`
         
-        `"cisloJednaci": null`
+        `"krajKod": null,`
+        
+        `"obecKod": null,`
+        
+        `"typPravnihoVztahu": null,`
+
+        `"format": "pdf",`
+        
+        `"cisloJednaci": null,`
         
         `"ucelKod": null`
+        
+        `}`
 
 ### ­ [GET]
 
@@ -347,7 +397,11 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
+        `{`
+
         `"idSestavy": 0`
+        
+        `}`
         
 
 ### ­ [GET]
@@ -367,11 +421,15 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"nazev": null`
+        `{`
+
+        `"nazev": null,`
         
-        `"ico": null`
+        `"ico": null,`
         
         `"rc": null`
+        
+        `}`
         
 ### ­ [GET]
 
@@ -388,11 +446,15 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"katastrUzemiKod": 0`
+        `{`
+
+        `"katastrUzemiKod": 0,`
         
-        `"kmenoveCislo": 0`
+        `"kmenoveCislo": 0,`
         
         `"poddeleni": null`
+        
+        `}`
         
 ### ­ [GET]
 
@@ -409,11 +471,15 @@ Parameters with value `null` are not required.
 
     + params (object) - valid JSON object of params
 
-        `"castObceKod": 0`
+        `{`
+
+        `"castObceKod": 0,`
         
-        `"typStavbyKod": 0`
+        `"typStavbyKod": 0,`
         
         `"cisloDomovni": 0`
+        
+        `}`
         
 ### ­ [GET]
 
