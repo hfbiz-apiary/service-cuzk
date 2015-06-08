@@ -8,149 +8,334 @@ Is service for providing CUZK functions easily available by REST interface.
 # Reports
 
 
-## generujLV [/generujLV]
+## generujLV [/generujLV?params={params}]
 
 Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"lvId": 0`
+        
+        `"format": "pdf"`
+        
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
 
 ### ­ [GET]
 
 + Request (application/json)
 
-    + Body
-    
-            {
-                lvId: 0,
-                format: 'pdf',
-                cisloJednaci: null,
-                ucelKod: null
-            }
-        
 + Response 200 (application/json)
 
 
-## generujLVPresObjekty [/generujLVPresObjekty]
-    
+## generujLVPresObjekty [/generujLVPresObjekty?params={params}]
+
 Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"seznamuObjektuTyp": ""`
+
+        `"seznamObjektu": ""`
+
+        `"castecnyVypis": "n"`
+
+        `"format": "pdf"`
+        
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
 
 ### ­ [GET]
 
 + Request (application/json)
 
-    + Body
-    
-            {
-                seznamuObjektuTyp: '',
-                seznamObjektu: '',
-                castecnyVypis: 'n',
-                format: 'pdf',
-                cisloJednaci: null,
-                ucelKod: null
-            }
-        
 + Response 200 (application/json)
 
 
-## generujLVZjednodusene [/generujLVZjednodusene]
-    
+## generujLVZjednodusene [/generujLVZjednodusene?params={params}]
+
 Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"katastrUzemiKod": 0`
+
+        `"lvCislo": 0`
+
+        `"format": "pdf"`
+        
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
 
 ### ­ [GET]
 
 + Request (application/json)
 
-    + Body
-    
-            {
-                katastrUzemiKod: 0,
-                lvCislo: 0,
-                format: 'pdf',
-                cisloJednaci: null,
-                ucelKod: null
-            }
-        
 + Response 200 (application/json)
 
 
-## generujMapu [/generujMapu]
-    
+## generujMapu [/generujMapu?params={params}]
+
 Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"parcelaId": null`
+
+        `"souradniceX": null`
+
+        `"souradniceY": null`
+
+        `"formatPapiru": "A4"`
+
+        `"orientaceNaSirku": "n"`
+
+        `"meritkoMapy": 1000`
+
+        `"vecnaBremena": "n"`
+
+        `"format": "pdf"`
+        
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
 
 ### ­ [GET]
 
 + Request (application/json)
 
-    + Body
-    
-            {
-                parcelaId: null,
-                souradniceX: null,
-                souradniceY: null,
-                formatPapiru: 'A4',
-                orientaceNaSirku: 'n',
-                meritkoMapy: 1000,
-                vecnaBremena: 'n',
-                format: 'pdf',
-                cisloJednaci: null,
-                ucelKod: null
-            }
-        
 + Response 200 (application/json)
 
 
-## generujPrehledVlastnictvi [/generujPrehledVlastnictvi]
-    
+## generujPrehledVlastnictvi [/generujPrehledVlastnictvi?params={params}]
+
 Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"osId": 0`
+        
+        `"krajKod": null`
+        
+        `"obecKod": null`
+        
+        `"typPravnihoVztahu": null`
+
+        `"format": "pdf"`
+        
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
 
 ### ­ [GET]
 
 + Request (application/json)
-
-    + Body
-    
-            {
-                osId: 0,
-                krajKod: null,
-                obecKod: null,
-                typPravnihoVztahu: null,
-                format: 'pdf',
-                cisloJednaci: null,
-                ucelKod: null
-            }
         
 + Response 200 (application/json)
 
 
-## seznamSestav [/seznamSestav]
-    
+## seznamSestav [/seznamSestav?params={params}]
+
 Parameters with value `null` are not required.
 
 If `idSestavy` is set to `null`, return result will be all the list.
 
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"idSestavy": null`
+
+
 ### ­ [GET]
 
 + Request (application/json)
 
-    + Body
++ Response 200 (application/json)
+
+
+## smazSestavu [/smazSestavu?params={params}]
     
-            {
-                idSestavy: null
-            }
+
+Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"idSestavy": 0`
+
+
+### ­ [GET]
+
++ Request (application/json)
         
 + Response 200 (application/json)
 
 
-## smazSestavu [/smazSestavu]
-    
+## vratGenerovanyLV [/vratGenerovanyLV?params={params}]
+
+Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"lvId": 0`
+        
+        `"format": "pdf"`
+        
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
+
 ### ­ [GET]
 
 + Request (application/json)
 
-    + Body
-    
-            {
-                idSestavy: 0
-            }
++ Response 200 (application/pdf)
+
+
+## vratGenerovanyLVPresObjekty [/vratGenerovanyLVPresObjekty?params={params}]
+
+Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"seznamuObjektuTyp": ""`
+
+        `"seznamObjektu": ""`
+
+        `"castecnyVypis": "n"`
+
+        `"format": "pdf"`
         
-+ Response 200 (application/json)
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
+
+### ­ [GET]
+
++ Request (application/json)
+
++ Response 200 (application/pdf)
 
 
+## vratGenerovanyLVZjednodusene [/vratGenerovanyLVZjednodusene?params={params}]
+
+Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"katastrUzemiKod": 0`
+
+        `"lvCislo": 0`
+
+        `"format": "pdf"`
+        
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
+
+### ­ [GET]
+
++ Request (application/json)
+
++ Response 200 (application/pdf)
+
+
+## vratGenerovanouMapu [/vratGenerovanouMapu?params={params}]
+
+Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"parcelaId": null`
+
+        `"souradniceX": null`
+
+        `"souradniceY": null`
+
+        `"formatPapiru": "A4"`
+
+        `"orientaceNaSirku": "n"`
+
+        `"meritkoMapy": 1000`
+
+        `"vecnaBremena": "n"`
+
+        `"format": "pdf"`
+        
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
+
+### ­ [GET]
+
++ Request (application/json)
+
++ Response 200 (application/pdf)
+
+
+## vratGenerovanyPrehledVlastnictvi [/vratGenerovanyPrehledVlastnictvi?params={params}]
+
+Parameters with value `null` are not required.
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"osId": 0`
+        
+        `"krajKod": null`
+        
+        `"obecKod": null`
+        
+        `"typPravnihoVztahu": null`
+
+        `"format": "pdf"`
+        
+        `"cisloJednaci": null`
+        
+        `"ucelKod": null`
+
+### ­ [GET]
+
++ Request (application/json)
+        
++ Response 200 (application/pdf)
+
+
+## vratSestavu [/vratSestavu?params={params}]
+
++ Parameters 
+
+    + params (object) - valid JSON object of params
+
+        `"idSestavy": 0`
+        
+
+### ­ [GET]
+
++ Request (application/json)
+        
++ Response 200 (application/pdf)
