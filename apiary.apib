@@ -7,10 +7,10 @@ Is service for providing CUZK functions easily available by REST interface.
 
 # Reports
 
-Parameters with value `null` are not required.
-
 
 ## generujLV [/generujLV]
+
+Parameters with value `null` are not required.
 
 ### ­ [GET]
 
@@ -30,6 +30,8 @@ Parameters with value `null` are not required.
 
 ## generujLVPresObjekty [/generujLVPresObjekty]
     
+Parameters with value `null` are not required.
+
 ### ­ [GET]
 
 + Request (application/json)
@@ -50,6 +52,8 @@ Parameters with value `null` are not required.
 
 ## generujLVZjednodusene [/generujLVZjednodusene]
     
+Parameters with value `null` are not required.
+
 ### ­ [GET]
 
 + Request (application/json)
@@ -62,6 +66,89 @@ Parameters with value `null` are not required.
                 format: 'pdf',
                 cisloJednaci: null,
                 ucelKod: null
+            }
+        
++ Response 200 (application/json)
+
+
+## generujMapu [/generujMapu]
+    
+Parameters with value `null` are not required.
+
+### ­ [GET]
+
++ Request (application/json)
+
+    + Body
+    
+            {
+                parcelaId: null,
+                souradniceX: null,
+                souradniceY: null,
+                formatPapiru: 'A4',
+                orientaceNaSirku: 'n',
+                meritkoMapy: 1000,
+                vecnaBremena: 'n',
+                format: 'pdf',
+                cisloJednaci: null,
+                ucelKod: null
+            }
+        
++ Response 200 (application/json)
+
+
+## generujPrehledVlastnictvi [/generujPrehledVlastnictvi]
+    
+Parameters with value `null` are not required.
+
+### ­ [GET]
+
++ Request (application/json)
+
+    + Body
+    
+            {
+                osId: 0,
+                krajKod: null,
+                obecKod: null,
+                typPravnihoVztahu: null,
+                format: 'pdf',
+                cisloJednaci: null,
+                ucelKod: null
+            }
+        
++ Response 200 (application/json)
+
+
+## seznamSestav [/seznamSestav]
+    
+Parameters with value `null` are not required.
+
+If `idSestavy` is set to `null`, return result will be all the list.
+
+### ­ [GET]
+
++ Request (application/json)
+
+    + Body
+    
+            {
+                idSestavy: null
+            }
+        
++ Response 200 (application/json)
+
+
+## smazSestavu [/smazSestavu]
+    
+### ­ [GET]
+
++ Request (application/json)
+
+    + Body
+    
+            {
+                idSestavy: 0
             }
         
 + Response 200 (application/json)
